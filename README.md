@@ -1,50 +1,68 @@
-# React + TypeScript + Vite
+# Supermarket Simple List
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Supermarket Simple List** es una aplicación creada para aprender y practicar el uso de **React**, **TypeScript**, y **SASS**. La aplicación permite realizar operaciones básicas de una lista de supermercado, como crear, leer y eliminar items.
 
-Currently, two official plugins are available:
+## Tecnologías utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Vite** como herramienta de bundling.
+- **React** para la creación de componentes.
+- **TypeScript** para una mejor gestión de tipos.
+- **SASS** para la gestión de estilos.
+- **Node.js** y **npm** como gestor de dependencias.
 
-## Expanding the ESLint configuration
+## Instalación
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Para ejecutar la aplicación en modo de desarrollo, sigue estos pasos:
 
-- Configure the top-level `parserOptions` property like this:
+1. Clona este repositorio:
+  ```bash
+   git clone https://github.com/nikogalvan/supermarket-simple-list.git
+   ```
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+2. Entra en el directorio del proyecto:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+   ```bash
+   cd supermarket-simple-list
+   ```
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+3. Instala las dependencias:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+   ```bash
+   npm install
+   ```
+
+4. Para ejecutar la aplicación en modo de desarrollo:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Para crear una versión optimizada para producción:
+
+   ```bash
+   npm run build
+   ```
+
+6. Para previsualizar la versión de producción:
+   ```bash
+   npm run preview
+   ```
+
+## Uso
+
+La aplicación te permite:
+
+- **Crear un nuevo item**: Agregar un item a la lista de supermercado.
+- **Leer los items**: Ver los items existentes en la lista.
+- **Eliminar un item**: Eliminar un item de la lista.
+
+## Capturas de Pantalla
+
+### Imagen 1
+![Supermarket List Screenshot first](public/screenshot-1.png)
+
+### Imagen 2
+![Supermarket List Screenshot second](public/screenshot-2.png)
+
+### Imagen 3
+![Supermarket List Screenshot third](public/screenshot-3.png)
