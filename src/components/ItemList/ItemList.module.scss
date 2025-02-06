@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 0.6rem;
+  padding: 0.8rem 0.6rem;
+  font-weight: 500;
+  background-color: rgb(27, 27, 27);
+  transition: border 0.3s ease-in-out; // Transición suave
+
+  button {
+    border: none;
+    background: none;
+    font-style: italic;
+    color: rgb(182, 172, 172);
+    cursor: pointer;
+
+    &:hover {
+      color: white; // Cambia el color del texto (opcional)
+    }
+  }
+}
