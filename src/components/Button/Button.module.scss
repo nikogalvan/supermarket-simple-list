@@ -1,0 +1,25 @@
+.container {
+    border-radius: 0.2rem;
+    border: none;
+    padding: 0.6rem 1rem;
+    width: 100%;
+    color: rgb(31, 29, 29);
+    cursor: pointer;
+    font-weight: 400;
+    &.primary {
+      background-color: rgb(47, 47, 245);
+      color: rgb(236, 229, 229);
+      &:hover {
+        background-color: rgb(98, 98, 243);
+      }
+    }
+  
+    &.secondary {
+      background-color: rgb(230, 230, 230);
+      color: rgb(22, 22, 22);
+      &:hover {
+        background-color: rgb(210, 210, 212);
+      }
+    }
+  }
+  
